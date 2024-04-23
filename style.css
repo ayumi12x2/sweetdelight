@@ -1,0 +1,326 @@
+body{
+    font-family: "Josefin Sans", "Noto Sans JP", sans-serif;
+    letter-spacing: 0.05em
+}
+
+
+/* ヘッダーセクション */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid rgba(241, 238, 228, 0.25);
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+  }
+
+ .header-logo {
+    width: 200px;
+    margin: 0 auto;
+  }
+
+.header-nav-list {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
+
+.header-nav {
+    margin-top: 10px;
+  }
+
+.header-nav-link {
+    color: #ffffff;
+  }
+
+/* アバウトセクション */
+#About{
+    background-color: #f1eee4;
+}
+.inner-about{
+    padding: 40px;
+    color:  #3c301e;
+}
+
+.main-title{
+    font-size: 40px;
+}
+
+.sub-title{
+    font-size: 12px;
+}
+
+.section-heading{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-textcontent{
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.about-text + .about-text{
+    margin-top: 16px;
+}
+
+/* メニューセクション*/
+.inner-menu{
+    padding: 80px 40px;
+    background-color: #f1eee4;
+    color:  #3c301e;
+    text-align: center;
+}
+
+.main-main{
+    font-size: 40px;
+}
+
+.sub-main{
+    font-size: 12px;
+    margin-bottom: 40px;
+}
+
+.menu-name{
+    padding-top: 16px;
+    font-size: 18px;
+}
+
+.menu-english-name{
+    color:#a98c5f;
+    margin-top: 8px;
+    font-size: 12px;
+}
+
+.hashtag{
+    color:#a98c5f;
+    margin-top: 14px;
+    font-size: 14px;
+}
+
+.menu-description + .menu-description{
+    margin-top: 60px;
+}
+
+/* ショップセクション */
+.shop{
+    color: #ffffff;
+    background-image: url(../img/sp/bg-shop.png);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 80px 40px;
+}
+
+.inner-shop{
+    margin: 0 20px;
+    margin-bottom: 40px;
+}
+
+.shop-main-title{
+    font-size: 40px;
+}
+
+.shop-sub-title{
+    font-size: 12px;
+}
+
+.inner-shop-content{
+    font-size: 14px;
+    line-height: 2;
+}
+
+.form{
+    margin-top: 40px;
+}
+
+.form-input{
+    width: 100%;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    padding: 14px;
+    font-family: "Josefin Sans", "Noto Sans JP", sans-serif;
+}
+
+.form-send{
+    border-radius: 4px;
+    border: none;
+    display: block;
+    margin: 10px auto 0;
+    width: 120px;
+    padding: 12px 10px;
+    color: #fff;
+    background-color: #a98c5f;
+    font-family: "Josefin Sans", "Noto Sans JP", sans-serif;
+}
+
+/* フッターセクション */
+.footer{
+    background-color: #3c301e;
+    color: #fff;
+    text-align: center;
+}
+
+.footer-title{
+    padding: 48px 0 40px 0;
+}
+
+.footer-sub-title{
+    font-size: 12px;
+}
+
+.footer-contents{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    font-size: 12px;
+}
+
+.footer-list-item{
+    max-width: 100%;
+    height: auto;
+}
+
+.sns-image{
+    width: 56px;
+}
+
+.footer-list-text{
+    margin-top: 12px;
+}
+
+.copy-wrapper{
+    margin-top: 46px;
+    padding: 12px;
+    border-top: 1px solid rgba(241, 238, 228, 0.25);
+}
+
+/* タブレット、PCサイズの表示 */
+@media screen and (min-width: 768px) {
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    margin: 0 auto;
+}
+
+.header-logo{
+    margin-left: 40px;
+    margin-top: 0;
+}
+
+.header-nav{
+    margin-right: 40px;
+}
+
+.header-nav-list{
+    gap: 40px;
+    margin: 0;
+}
+
+.main-title{
+    font-size: 64px;
+}
+
+.inner-about{
+    padding: 100px 45px;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.section-contents{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.about-image{
+    width: 300px;
+}
+
+.about-textcontent{
+    font-size: 15px;
+}
+
+.about-text+.about-text{
+    gap: 30px;
+}
+
+.inner-menu{
+    padding: 0 0 100px;
+}
+
+.main-main{
+    font-size: 64px;
+}
+
+.menu-heading{
+    margin-bottom: 40px;
+}
+
+.menu-contents{
+    display: flex;
+    gap: 20px;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.menu-image{
+    width: 100%;
+}
+
+.sub-main{
+    margin-bottom: 0px;
+}
+
+.menu-description + .menu-description{
+    margin-top: 0;
+}
+
+.shop{
+    background-image: url(../img/bg-shop.png);
+    background-position: center center;
+    background-size: cover;
+    padding: 60px 40px;
+}
+
+.inner-shop-shop{
+    max-width: 560px;
+    margin: 0 auto;
+
+}
+
+.shop-main-title{
+    font-size: 64px;
+}
+
+.form{
+    display: flex;
+    gap: 20px;
+}
+
+.form-send{
+    margin-top: 0;
+}
+
+.footer-sub-title{
+    margin: 12px 0 0;
+}
+
+.footer-contents{
+    gap: 40px;
+    padding: 0 20px;
+}
+
+.footer-list-item{
+    gap: 40px;
+}
+
+.copyright{
+    font-size: 13px;
+}
+
+}
